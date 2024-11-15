@@ -20,10 +20,10 @@ public class HomeControllerTest {
   @Test
   public void testHomePage() throws Exception {
     mockMvc.perform(get("/"))    // <3>
-      .andExpect(status().isOk())  // <4>
-      .andExpect(view().name("home"))  // <5>
-      .andExpect(content().string(           // <6>
-          containsString("Welcome to...")));
+            .andExpect(status().isOk())  // <4>
+            .andExpect(view().name("home"))  // <5>
+            .andExpect(content().string(           // <6>
+                    containsString("Welcome to...")));
   }
 
 }

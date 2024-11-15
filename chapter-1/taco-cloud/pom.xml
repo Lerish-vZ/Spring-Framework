@@ -22,11 +22,10 @@
   </properties>
 
   <dependencies>
-    <dependency>                                             <!--2-->
+    <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-thymeleaf</artifactId>
     </dependency>
-
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
@@ -38,32 +37,11 @@
       <scope>runtime</scope>
       <optional>true</optional>
     </dependency>
-
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
-      <exclusions>
-        <exclusion>
-          <groupId>org.junit.vintage</groupId>
-          <artifactId>junit-vintage-engine</artifactId>
-        </exclusion>
-      </exclusions>
     </dependency>
-
-<!-- end::allButSelenium[] -->
-    <dependency>
-      <groupId>org.seleniumhq.selenium</groupId>
-      <artifactId>selenium-java</artifactId>
-      <scope>test</scope>
-    </dependency>
-
-    <dependency>
-      <groupId>org.seleniumhq.selenium</groupId>
-      <artifactId>htmlunit-driver</artifactId>
-      <scope>test</scope>
-    </dependency>
-<!-- tag::allButSelenium[] -->
   </dependencies>
 
   <build>
