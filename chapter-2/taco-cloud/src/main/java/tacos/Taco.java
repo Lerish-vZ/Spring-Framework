@@ -1,3 +1,4 @@
+//A domain object defining a taco design
 package tacos;
 import java.util.List;
 import javax.validation.constraints.NotNull;

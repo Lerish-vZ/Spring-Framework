@@ -17,3 +17,4 @@ public class Ingredient {
 }
 //We do not have getter and setter methods or toString methods because we are using Lombok, this creates all those methods for us at runtime
 //Lombok needs to be added as a dependency (./pom.xml)
+//You also need to add Lombok as an extension to your IDE
