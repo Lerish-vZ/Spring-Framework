@@ -1,3 +1,5 @@
+//defines how customers specify the tacos that they want to order, along with payment
+//and delivery information.
 package tacos;
 import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotBlank;
