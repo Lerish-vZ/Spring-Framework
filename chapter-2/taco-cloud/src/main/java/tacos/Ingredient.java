@@ -1,3 +1,4 @@
+//This ingredient class defines the domain object that we need
 package tacos;
 
 import lombok.Data;
@@ -14,3 +15,4 @@ public class Ingredient {
   }
 
 }
+//We do not have getter and setter methods or toString methods because we are using Lombok, this creates all those methods for us at runtime
