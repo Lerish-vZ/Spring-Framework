@@ -1,3 +1,8 @@
+//The beginnings of a Spring controller class
+//Handle HTTP GET requests where the request path is /design
+//Build a list of ingredients
+//Hand off the request and the ingredient data to a view template to be rendered
+//as HTML and sent to the requesting web browser
 package tacos.web;
 
 import java.util.Arrays;
