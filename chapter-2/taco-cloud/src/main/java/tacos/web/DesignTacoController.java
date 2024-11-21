@@ -26,6 +26,12 @@ import javax.validation.Valid;
 import org.springframework.validation.Errors;
 
 @Slf4j
+//        The first, @Slf4j, is a Lombok-provided annotation that, at compilation
+//        time, will automatically generate an SLF4J (Simple Logging Facade for Java,
+//      https://www.slf4j.org/) Logger static property in the class. This modest annotation
+//      has the same effect as if you were to explicitly add the following lines within the class:
+//      private static final org.slf4j.Logger log =
+//      org.slf4j.LoggerFactory.getLogger(DesignTacoController.class);
 @Controller
 @RequestMapping("/design")
 @SessionAttributes("tacoOrder")
