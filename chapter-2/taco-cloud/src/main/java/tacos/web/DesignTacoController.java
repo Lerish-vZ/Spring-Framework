@@ -85,6 +85,7 @@ public void addIngredientsToModel(Model model) {
   }
  */
 
+//    Handling POST requests with @PostMapping
   @PostMapping
   public String processTaco(
 		  @Valid Taco taco, Errors errors,
