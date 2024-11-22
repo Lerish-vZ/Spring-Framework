@@ -88,7 +88,7 @@ public void addIngredientsToModel(Model model) {
 //    Handling POST requests with @PostMapping
   @PostMapping
   public String processTaco(
-		  @Valid Taco taco, Errors errors,
+		  @Valid Taco taco, Errors errors, //tells Spring MVC to perform validation on the submitted Taco object after it’s bound to the submitted form data and before the processTaco() method is called
 		  @ModelAttribute TacoOrder tacoOrder) {
 
     if (errors.hasErrors()) {
