@@ -10,6 +10,10 @@ import org.springframework.stereotype.Repository;
 import tacos.Ingredient;
 
 //Written to query database
+
+//By annotating JdbcIngredientRepository with
+//@Repository, you declare that it should be automatically discovered by Spring component
+//scanning and instantiated as a bean in the Spring application context.
 @Repository
 public class JdbcIngredientRepository implements IngredientRepository {
 
