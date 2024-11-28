@@ -11,9 +11,9 @@ import lombok.Data;
 @Data
 public class Taco {
 
-  private Long id;
+  private Long id; //added
 
-  private Date createdAt = new Date();
+  private Date createdAt = new Date(); //added
 
   @NotNull
   @Size(min=5, message="Name must be at least 5 characters long")

@@ -15,11 +15,11 @@ import lombok.Data;
 @Data
 public class TacoOrder implements Serializable {
 
-  private static final long serialVersionUID = 1L;
+  private static final long serialVersionUID = 1L; //added
 
-  private Long id;
+  private Long id; //added
 
-  private Date placedAt;
+  private Date placedAt; //added
 
 
   @NotBlank(message="Delivery name is required")
