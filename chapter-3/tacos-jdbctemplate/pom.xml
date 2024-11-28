@@ -74,12 +74,14 @@
     </dependency>
 
     <!-- tag::springJdbcTemplate[] -->
+<!--    ADDED     -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-jdbc</artifactId>
     </dependency>
     <!-- end::springJdbcTemplate[] -->
     <!-- tag::h2database[] -->
+    <!--    ADDED     -->
     <dependency>
       <groupId>com.h2database</groupId>
       <artifactId>h2</artifactId>
