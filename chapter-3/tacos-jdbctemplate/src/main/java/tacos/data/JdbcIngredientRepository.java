@@ -9,6 +9,7 @@ import org.springframework.stereotype.Repository;
 
 import tacos.Ingredient;
 
+//Written to query database
 @Repository
 public class JdbcIngredientRepository implements IngredientRepository {
 
