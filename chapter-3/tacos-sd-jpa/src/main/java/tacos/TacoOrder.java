@@ -55,7 +55,7 @@ public class TacoOrder implements Serializable {
   @Digits(integer=3, fraction=0, message="Invalid CVV")
   private String ccCVV;
 
-  @OneToMany(cascade = CascadeType.ALL)
+  @OneToMany(cascade = CascadeType.ALL) //So that if the order is deleted the related tacos are also deleted
   private List<Taco> tacos = new ArrayList<>();
 
   public void addTaco(Taco taco) {
