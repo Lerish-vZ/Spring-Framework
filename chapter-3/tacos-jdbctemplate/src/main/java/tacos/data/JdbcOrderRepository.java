@@ -41,7 +41,7 @@ public class JdbcOrderRepository implements OrderRepository {
         Types.VARCHAR, Types.VARCHAR, Types.VARCHAR,
         Types.VARCHAR, Types.VARCHAR, Types.VARCHAR,
         Types.VARCHAR, Types.VARCHAR, Types.TIMESTAMP
-    );
+    ); //Describes insert query, along with the types of input fields.
     pscf.setReturnGeneratedKeys(true);
 
     order.setPlacedAt(new Date());
