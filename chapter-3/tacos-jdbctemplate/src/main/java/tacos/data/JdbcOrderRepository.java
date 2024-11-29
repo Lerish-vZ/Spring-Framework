@@ -71,7 +71,7 @@ public class JdbcOrderRepository implements OrderRepository {
     }
 
     return order;
-  } //
+  }
 
   private long saveTaco(Long orderId, int orderKey, Taco taco) {
     taco.setCreatedAt(new Date());
@@ -100,7 +100,7 @@ public class JdbcOrderRepository implements OrderRepository {
     saveIngredientRefs(tacoId, taco.getIngredients());
 
     return tacoId;
-  }
+  } // Here you are saving the Taco objects in the order
 
   private void saveIngredientRefs(
       long tacoId, List<IngredientRef> ingredientRefs) {
