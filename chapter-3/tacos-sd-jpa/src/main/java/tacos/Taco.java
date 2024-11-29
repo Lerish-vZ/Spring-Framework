@@ -18,7 +18,7 @@ import lombok.Data;
 public class Taco {
 
   @Id
-  @GeneratedValue(strategy = GenerationType.AUTO)
+  @GeneratedValue(strategy = GenerationType.AUTO) //means database generates the id
   private Long id;
 
   @NotNull
@@ -28,7 +28,7 @@ public class Taco {
   private Date createdAt = new Date();
 
   @Size(min=1, message="You must choose at least 1 ingredient")
-  @ManyToMany()
+  @ManyToMany() //Declares relationship between a Taco and its associated Ingredient list
   private List<Ingredient> ingredients = new ArrayList<>();
   
   public void addIngredient(Ingredient ingredient) {
