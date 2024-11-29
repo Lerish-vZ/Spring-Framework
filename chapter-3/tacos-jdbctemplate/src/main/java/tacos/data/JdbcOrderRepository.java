@@ -59,10 +59,10 @@ public class JdbcOrderRepository implements OrderRepository {
                 order.getPlacedAt()));
     //passed in the values from the TacoOrder object that will be persisted
 
-    GeneratedKeyHolder keyHolder = new GeneratedKeyHolder();
+    GeneratedKeyHolder keyHolder = new GeneratedKeyHolder(); //has the ID of the order as the database has created it
     jdbcOperations.update(psc, keyHolder);
     long orderId = keyHolder.getKey().longValue();
-    order.setId(orderId);
+    order.setId(orderId); //Copy the database ID to the orderID so they correspond
 
     List<Taco> tacos = order.getTacos();
     int i=0;
@@ -71,7 +71,7 @@ public class JdbcOrderRepository implements OrderRepository {
     }
 
     return order;
-  }
+  } //
 
   private long saveTaco(Long orderId, int orderKey, Taco taco) {
     taco.setCreatedAt(new Date());
