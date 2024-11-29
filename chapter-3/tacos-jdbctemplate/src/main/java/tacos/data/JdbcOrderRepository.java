@@ -42,7 +42,7 @@ public class JdbcOrderRepository implements OrderRepository {
         Types.VARCHAR, Types.VARCHAR, Types.VARCHAR,
         Types.VARCHAR, Types.VARCHAR, Types.TIMESTAMP
     ); //Describes insert query, along with the types of input fields.
-    pscf.setReturnGeneratedKeys(true);
+    pscf.setReturnGeneratedKeys(true); //This is so that you can fetch the saved order's ID later on.
 
     order.setPlacedAt(new Date());
     PreparedStatementCreator psc =
@@ -57,6 +57,7 @@ public class JdbcOrderRepository implements OrderRepository {
                 order.getCcExpiration(),
                 order.getCcCVV(),
                 order.getPlacedAt()));
+    //passed in the values from the TacoOrder object that will be persisted
 
     GeneratedKeyHolder keyHolder = new GeneratedKeyHolder();
     jdbcOperations.update(psc, keyHolder);
