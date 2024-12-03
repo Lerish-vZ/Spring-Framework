@@ -15,13 +15,13 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import lombok.Data;
 
 @Data
-@Document
+@Document //added
 public class TacoOrder implements Serializable {
 
   private static final long serialVersionUID = 1L;
 
   @Id
-  private String id;
+  private String id; //Changed to String type
 
   private Date placedAt = new Date();
 
