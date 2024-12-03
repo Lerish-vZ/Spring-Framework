@@ -21,7 +21,7 @@ public class TacoOrder implements Serializable {
   private static final long serialVersionUID = 1L;
 
   @Id
-  private String id; //Changed to String type
+  private String id; //Changed to String type as if it is a String then Mongo will automatically assign it an ID when it's saved
 
   private Date placedAt = new Date();
 
