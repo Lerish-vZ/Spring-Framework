@@ -22,7 +22,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
   private UserDetailsService userDetailsService;
 
   @Override
-  protected void configure(HttpSecurity http) throws Exception {
+  protected void configure(HttpSecurity http) throws Exception {  //The following lines use SpEL security constraints
     http
       .authorizeRequests()
         .antMatchers("/design", "/orders").access("hasRole('USER')")
