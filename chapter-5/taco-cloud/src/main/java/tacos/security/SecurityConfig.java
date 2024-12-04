@@ -33,7 +33,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
           .loginPage("/login")
 
       .and()
-        .logout()
+        .logout() //call logout
           .logoutSuccessUrl("/")
 
       // Make H2-Console non-secured; for debug purposes
