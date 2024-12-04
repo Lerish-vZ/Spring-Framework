@@ -37,14 +37,14 @@ public class User implements UserDetails { //Implementation of UserDetails will 
   private final String phoneNumber;
   
   @Override
-  public Collection<? extends GrantedAuthority> getAuthorities() {
+  public Collection<? extends GrantedAuthority> getAuthorities() { //Returns a collection of authorities granted to the user
     return Arrays.asList(new SimpleGrantedAuthority("ROLE_USER"));
   }
 
   @Override
   public boolean isAccountNonExpired() {
     return true;
-  }
+  } //Indicates if users account is enabled, locked, or expired
 
   @Override
   public boolean isAccountNonLocked() {
