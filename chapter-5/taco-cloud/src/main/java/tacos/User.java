@@ -38,7 +38,7 @@ public class User implements UserDetails { //Implementation of UserDetails will 
   
   @Override
   public Collection<? extends GrantedAuthority> getAuthorities() { //Returns a collection of authorities granted to the user
-    return Arrays.asList(new SimpleGrantedAuthority("ROLE_USER"));
+    return Arrays.asList(new SimpleGrantedAuthority("ROLE_USER")); //Grants all users Role_User authority
   }
 
   @Override
