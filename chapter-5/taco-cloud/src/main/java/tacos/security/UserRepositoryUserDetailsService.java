@@ -33,3 +33,13 @@ public class UserRepositoryUserDetailsService
   }
 
 }
+
+/*
+The userDetailsService() method is given a UserRepository as a parameter. To
+create the bean, it returns a lambda that takes a username parameter and uses it to call
+findByUsername() on the given UserRepository.
+The loadByUsername() method has one simple rule: it must never return null.
+Therefore, if the call to findByUsername() returns null, the lambda will throw a
+UsernameNotFoundException (which is defined by Spring Security). Otherwise, the
+User that was found will be returned.
+ */
