@@ -18,7 +18,8 @@ import lombok.RequiredArgsConstructor;
 @Data
 @NoArgsConstructor(access=AccessLevel.PRIVATE, force=true)
 @RequiredArgsConstructor
-public class User implements UserDetails {
+public class User implements UserDetails { //Implementation of UserDetails will provide some essential user information to the framework,
+  //such as what authorities are granted to the user and whether the user's account is enabled.
 
   private static final long serialVersionUID = 1L;
 
