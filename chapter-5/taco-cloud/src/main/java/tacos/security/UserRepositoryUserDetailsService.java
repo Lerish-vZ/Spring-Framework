@@ -22,7 +22,7 @@ public class UserRepositoryUserDetailsService
   }
   
   @Override
-  public UserDetails loadUserByUsername(String username)
+  public UserDetails loadUserByUsername(String username) //accepts a username and uses it to lok up a UserDetails object
       throws UsernameNotFoundException {
     User user = userRepo.findByUsername(username);
     if (user != null) {
