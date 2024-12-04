@@ -3,6 +3,8 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import lombok.Data;
 import tacos.User;
 
+// RegistrationForm is defined here
+
 @Data
 public class RegistrationForm {
 
