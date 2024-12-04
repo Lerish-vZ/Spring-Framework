@@ -28,7 +28,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         .antMatchers("/design", "/orders").access("hasRole('USER')")
         .antMatchers("/", "/**").access("permitAll")
 
-      .and()
+      .and() //signifies that you’re finished with the authorization configuration and are ready to apply some additional HTTP configuration.
         .formLogin()
           .loginPage("/login")
 
