@@ -64,6 +64,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
   public PasswordEncoder encoder() {
     return new BCryptPasswordEncoder();
   } //main thing this security config does
+  //Will use when creating new users and when authenticating users at login
 
 
   @Override
