@@ -33,7 +33,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
           .loginPage("/login")
 
       .and()
-        .logout() //call logout
+        .logout() //This sets up a security filter that intercepts POST requests to /logout. Therefore, to provide logout capability,
+                  // you just need to add a logout form and button to the views in your application
           .logoutSuccessUrl("/")
 
       // Make H2-Console non-secured; for debug purposes
